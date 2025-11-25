@@ -141,8 +141,8 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "OK", timestamp: new Date().toISOString() });
 });
 
-// 取得高雄天氣預報
-app.get("/api/weather/kaohsiung", getKaohsiungWeather);
+// 取得新北天氣預報
+app.get("/api/weather/newtaipei", getNewTaipeiWeather);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
