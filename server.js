@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
  * CWA 氣象資料開放平臺 API
  * 使用「一般天氣預報-今明 36 小時天氣預報」資料集
  */
-const getKaohsiungWeather = async (req, res) => {
+const getNewTaipeiWeather = async (req, res) => {
   try {
     // 檢查是否有設定 API Key
     if (!CWA_API_KEY) {
